@@ -1,29 +1,29 @@
 payload:
 # —— 传统商业银行 ——
-  - DOMAIN-SUFFIX,hsbc.com.hk,香港
-  - DOMAIN-SUFFIX,hangseng.com,香港
-  - DOMAIN-SUFFIX,icbcasia.com
-  - DOMAIN-SUFFIX,sc.com
-  - DOMAIN-SUFFIX,cncbinternational.com
-  - DOMAIN-SUFFIX,ccb.com
-  - DOMAIN-SUFFIX,bochk.com
-  - DOMAIN-SUFFIX,cmbwinglungbank.com
-  - DOMAIN-SUFFIX,hkbea.com
-  - DOMAIN-SUFFIX,dahsing.com
+ - +.hsbc.com.hk
+  - +.hangseng.com
+  - +.icbcasia.com
+  - +.sc.com
+  - +.cncbinternational.com
+  - +.ccb.com
+  - +.bochk.com
+  - +.cmbwinglungbank.com
+  - +.hkbea.com
+  - +.dahsing.com
 
   # —— 数字/虚拟银行 ——
-  - DOMAIN-SUFFIX,pingandb.com
-  - DOMAIN-SUFFIX,elebank.com
-  - DOMAIN-SUFFIX,za.group
-  - DOMAIN-SUFFIX,welab.bank
-  - DOMAIN-SUFFIX,antbank.hk
-  - DOMAIN-SUFFIX,livibank.com
-  - DOMAIN-SUFFIX,fusionbank.com
-  - DOMAIN-SUFFIX,airstarbank.com
-
+  - +.pingandb.com
+  - +.elebank.com
+  - +.za.group
+  - +.welab.bank
+  - +.antbank.hk
+  - +.livibank.com
+  - +.fusionbank.com
+  - +.airstarbank.com
+  
   # —— 香港本土生活与电信 ——
-  - DOMAIN-SUFFIX,hkjc.com
-  - DOMAIN-SUFFIX,hkcsl.com
-  - DOMAIN-SUFFIX,octopus.com.hk
-  - DOMAIN-SUFFIX,octopuscards.com
-  - DOMAIN-SUFFIX,price.com.hk
+  - +.hkjc.com
+  - +.hkcsl.com
+  - +.octopus.com.hk
+  - +.octopuscards.com
+  - +.price.com.hk
