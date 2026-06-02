@@ -25,9 +25,9 @@ dns:
     - RULE-SET,geolocation-!cn,fake-ip
     - MATCH,fake-ip
   default-nameserver:
-    - 202.96.128.86    
     - 119.29.29.29
     - 223.5.5.5
+    - 202.96.128.86    
   nameserver:
     - tls://dns.alidns.com:853
     - tls://dot.pub:853
