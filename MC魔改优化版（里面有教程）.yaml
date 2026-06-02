@@ -123,7 +123,7 @@ proxy-groups:
   # 音视频
   - { name: Spotify,    <<: *prefer_proxy,     icon: https://raw.githubusercontent.com/Koolson/Qure/master/IconSet/Color/Spotify.png }
   - { name: Netflix,    <<: *prefer_proxy,     icon: https://raw.githubusercontent.com/Koolson/Qure/master/IconSet/Color/Netflix.png }
-  - { name: TikTok,     <<: *prefer_proxy,     icon: https://raw.githubusercontent.com/Koolson/Qure/master/IconSet/Color/TikTok.png }
+  - { name: TikTok,     <<: *prefer_proxy,     icon: https://raw.githubusercontent.com/Koolson/Qure/master/IconSet/Color/TikTok.png, proxies: [ 美国, 日本, 新加坡, 韩国, 台湾, 其他地区, 手动选择 ] }
   - { name: Porn,       <<: *prefer_proxy,     icon: https://raw.githubusercontent.com/Koolson/Qure/master/IconSet/Color/Pornhub.png} 
   - { name: Emby,       <<: *prefer_proxy,     icon: https://raw.githubusercontent.com/Koolson/Qure/master/IconSet/Color/Emby.png} 
   - { name: Disney,     <<: *prefer_proxy,     icon: https://raw.githubusercontent.com/Koolson/Qure/master/IconSet/Color/Disney.png} 
