@@ -232,6 +232,10 @@ rule-providers:
 
   # =============================== -  匹配逻辑  - ================================
 rules:
+  - DOMAIN-SUFFIX,ocbc.com.sg,新加坡
+  - DOMAIN-SUFFIX,ocbc.com,新加坡
+  - DOMAIN-SUFFIX,ifastgb.com,其他地区
+
   # 1. 广告拦截 (最高优先级)
   - RULE-SET,category-ads-all,REJECT
   - RULE-SET,ad_ip,REJECT,no-resolve
@@ -297,11 +301,6 @@ rules:
   - RULE-SET,cn,DIRECT
   - RULE-SET,cn_ip,DIRECT,no-resolve
 
-  # 10.海外银行
-  - DOMAIN-SUFFIX,ocbc.com.sg,新加坡
-  - DOMAIN-SUFFIX,ocbc.com,新加坡
-  - DOMAIN-SUFFIX,ifastgb.com,其他地区
-
-  # 11. 最终兜底规则
+  # 10. 最终兜底规则
   - MATCH,漏网之鱼
 # ===============================================  -  EOF - =======================================================
