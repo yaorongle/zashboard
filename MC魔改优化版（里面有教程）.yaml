@@ -106,7 +106,7 @@ proxy-groups:
   # AI 相关服务
   - { name: AI,         type: select,          icon: https://raw.githubusercontent.com/Koolson/Qure/master/IconSet/Color/Siri.png, proxies: [ 美国, 日本, 新加坡, 韩国, 香港, 台湾, 其他地区, 默认代理, 手动选择 ] }
   - { name: Gemini,     type: select,          icon: https://raw.githubusercontent.com/Koolson/Qure/master/IconSet/Color/AI.png, proxies: [ 美国, 日本, 新加坡, 韩国, 香港, 台湾, 其他地区, 默认代理, 手动选择 ] }
-  - { name: ChatGPT,    type: select,          icon: https://raw.githubusercontent.com/Koolson/Qure/master/IconSet/Color/ChatGPT.png, proxies: [ 美国, 日本, 新加坡, 韩国, 香港, 台湾, 其他地区, 默认代理, 手动选择 ] }
+  - { name: ChatGPT,    type: select,          icon: https://raw.githubusercontent.com/Koolson/Qure/master/IconSet/Color/ChatGPT.png, proxies: [ 美国, 日本, 新加坡, 韩国, 台湾, 其他地区, 默认代理, 手动选择 ] }
 
   # 常用软件/网站
   - { name: Apple,      <<: *prefer_direct,    icon: https://raw.githubusercontent.com/Koolson/Qure/master/IconSet/Color/Apple.png }
