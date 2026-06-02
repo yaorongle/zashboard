@@ -273,7 +273,7 @@ rules:
   - RULE-SET,nintendo,Nintendo
   - RULE-SET,nintendo@cn,DIRECT
   - RULE-SET,playstation,PlayStation
-  - RULE-SET,hk,HK
+  - RULE-SET,hk,香港
 
   # 5. Apple & Microsoft (特定处理)
   - RULE-SET,apple@cn,DIRECT
