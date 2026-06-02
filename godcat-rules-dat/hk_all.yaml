@@ -1,6 +1,6 @@
 payload:
 # —— 传统商业银行 ——
-  - DOMAIN-SUFFIX,hsbc.com.hk
+  - DOMAIN-SUFFIX,hsbc.com.hk:80
   - DOMAIN-SUFFIX,hangseng.com
   - DOMAIN-SUFFIX,icbcasia.com
   - DOMAIN-SUFFIX,sc.com
