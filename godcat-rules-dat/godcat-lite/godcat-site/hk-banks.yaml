@@ -1,26 +1,29 @@
-rule-providers:
-DOMAIN-SUFFIX,hsbc.com.hk                  汇丰银行
-DOMAIN-SUFFIX,hangseng.com                 恒生银行
-DOMAIN-SUFFIX,icbcasia.com                 工银亚洲
-DOMAIN-SUFFIX,sc.com/hk                    香港渣打银行
-DOMAIN-SUFFIX,www.cncbinternational.com    中信国际
-DOMAIN-SUFFIX,www.asia.ccb.com             建设亚洲
-DOMAIN-SUFFIX,bochk.com                    中银香港
-DOMAIN-SUFFIX,cmbwinglungbank.com          永隆银行
-DOMAIN-SUFFIX,www.hkbea.com                东亚银行
-DOMAIN-SUFFIX,dahsing.com                  大新银行
+payload:
+  # —— 传统商业银行 ——
+  - DOMAIN-SUFFIX,hsbc.com.hk
+  - DOMAIN-SUFFIX,hangseng.com
+  - DOMAIN-SUFFIX,icbcasia.com
+  - DOMAIN-SUFFIX,sc.com
+  - DOMAIN-SUFFIX,cncbinternational.com
+  - DOMAIN-SUFFIX,ccb.com
+  - DOMAIN-SUFFIX,bochk.com
+  - DOMAIN-SUFFIX,cmbwinglungbank.com
+  - DOMAIN-SUFFIX,hkbea.com
+  - DOMAIN-SUFFIX,dahsing.com
 
-数字银行
-DOMAIN-SUFFIX,pingandb.com             香港平安数字银行
-DOMAIN-SUFFIX,elebank.com              象象银行
-DOMAIN-SUFFIX,za.group                 众安银行
-DOMAIN-SUFFIX,welab.bank               汇立银行
-DOMAIN-SUFFIX,antbank.hk               蚂蚁银行
-DOMAIN-SUFFIX,livibank.com             理慧银行
-DOMAIN-SUFFIX,fusionbank.com           富融银行
+  # —— 数字/虚拟银行 ——
+  - DOMAIN-SUFFIX,pingandb.com
+  - DOMAIN-SUFFIX,elebank.com
+  - DOMAIN-SUFFIX,za.group
+  - DOMAIN-SUFFIX,welab.bank
+  - DOMAIN-SUFFIX,antbank.hk
+  - DOMAIN-SUFFIX,livibank.com
+  - DOMAIN-SUFFIX,fusionbank.com
+  - DOMAIN-SUFFIX,airstarbank.com
 
-其它
-DOMAIN-SUFFIX,hkjc.com                 香港赛马马会
-DOMAIN-SUFFIX,hkcsl.com                香港CSL电信
-DOMAIN-SUFFIX,octopus.com.hk           香港八达通
-DOMAIN-SUFFIX,price.com.hk             香港价格网
+  # —— 香港本土生活与电信 ——
+  - DOMAIN-SUFFIX,hkjc.com
+  - DOMAIN-SUFFIX,hkcsl.com
+  - DOMAIN-SUFFIX,octopus.com.hk
+  - DOMAIN-SUFFIX,octopuscards.com
+  - DOMAIN-SUFFIX,price.com.hk
