@@ -297,6 +297,11 @@ rules:
   - RULE-SET,cn,DIRECT
   - RULE-SET,cn_ip,DIRECT,no-resolve
 
-  # 10. 最终兜底规则
+  # 10.海外银行
+  - DOMAIN-SUFFIX,ocbc.com.sg,新加坡
+  - DOMAIN-SUFFIX,ocbc.com,新加坡
+  - DOMAIN-SUFFIX,ifastgb.com,其他地区
+
+  # 11. 最终兜底规则
   - MATCH,漏网之鱼
 # ===============================================  -  EOF - =======================================================
