@@ -124,7 +124,7 @@ proxy-groups:
   - { name: Spotify,    <<: *prefer_proxy,     icon: https://raw.githubusercontent.com/Koolson/Qure/master/IconSet/Color/Spotify.png }
   - { name: Netflix,    <<: *prefer_proxy,     icon: https://raw.githubusercontent.com/Koolson/Qure/master/IconSet/Color/Netflix.png }
   - { name: TikTok,     <<: *prefer_proxy,     icon: https://raw.githubusercontent.com/Koolson/Qure/master/IconSet/Color/TikTok.png, proxies: [ 美国, 日本, 新加坡, 韩国, 台湾, 其他地区, 手动选择 ] }
-  - { name: 香港银行,    <<: *prefer_proxy,     icon: https://raw.githubusercontent.com/yaorongle/zashboard/main/logo/hk-banks.png, proxies: [ 香港 ] } 
+  - { name: hk,         <<: *prefer_proxy,     icon: https://raw.githubusercontent.com/yaorongle/zashboard/main/logo/hk-banks.png, proxies: [ 香港 ] } 
   - { name: Emby,       <<: *prefer_proxy,     icon: https://raw.githubusercontent.com/Koolson/Qure/master/IconSet/Color/Emby.png} 
   - { name: Disney,     <<: *prefer_proxy,     icon: https://raw.githubusercontent.com/Koolson/Qure/master/IconSet/Color/Disney.png} 
    # 测速服务
@@ -273,6 +273,7 @@ rules:
   - RULE-SET,nintendo,Nintendo
   - RULE-SET,nintendo@cn,DIRECT
   - RULE-SET,playstation,PlayStation
+  - RULE-SET,hk,HK
 
   # 5. Apple & Microsoft (特定处理)
   - RULE-SET,apple@cn,DIRECT
