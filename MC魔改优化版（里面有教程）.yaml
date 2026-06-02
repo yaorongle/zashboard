@@ -255,7 +255,6 @@ rules:
   - RULE-SET,steam-cn,DIRECT
   - RULE-SET,steam,Steam
   - RULE-SET,xbox,Xbox
-  - RULE-SET,porn,Porn
   - RULE-SET,youtube,YouTube
   - RULE-SET,google,Google
   - RULE-SET,github,GitHub
