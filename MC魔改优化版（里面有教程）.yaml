@@ -193,7 +193,7 @@ rule-providers:
   cloudflare-cn:          { <<: *domain, interval: 86473, url: "https://raw.githubusercontent.com/MetaCubeX/meta-rules-dat/meta/geo/geosite/cloudflare@cn.mrs" }
   apple:                  { <<: *domain, interval: 86366, url: "https://raw.githubusercontent.com/MetaCubeX/meta-rules-dat/meta/geo/geosite/apple.mrs" }
   microsoft:              { <<: *domain, interval: 86539, url: "https://raw.githubusercontent.com/MetaCubeX/meta-rules-dat/meta/geo/geosite/microsoft.mrs" }
-  香港:                   { <<: *domain, interval: 86444, url: "https://raw.githubusercontent.com/yaorongle/zashboard/refs/heads/main/godcat-rules-dat/godcat-lite/godcat-site/hk-banks.yaml"}
+  hk:                     { <<: *domain, interval: 86444, url: "https://raw.githubusercontent.com/yaorongle/zashboard/refs/heads/main/godcat-rules-dat/godcat-lite/godcat-site/hk-banks.yaml"}
   
   # 音视频
   spotify:                { <<: *domain, interval: 86208, url: "https://raw.githubusercontent.com/MetaCubeX/meta-rules-dat/meta/geo/geosite/spotify.mrs" }
