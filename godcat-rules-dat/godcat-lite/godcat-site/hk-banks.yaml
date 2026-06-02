@@ -1,4 +1,4 @@
-payload:
+rules:
 DOMAIN-SUFFIX,hsbc.com.hk                  汇丰银行
 DOMAIN-SUFFIX,hangseng.com                 恒生银行
 DOMAIN-SUFFIX,icbcasia.com                 工银亚洲
