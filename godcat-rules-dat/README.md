@@ -27,7 +27,7 @@ rules:
 
 +.sc.com：渣打银行（Standard Chartered）—— 香港三家发钞银行之一。
 
-+.cncbinternational.com：信银国际（信中信银行国际，CNCBI）。
++.cncbinternational.com：信银国际（中信银行国际，CNCBI）。
 
 +.ccb.com：中国建设银行（CCB，包含建行亚洲的业务）。
 
@@ -42,9 +42,9 @@ rules:
 二、 数字/虚拟银行
 这些是近年来由香港金融管理局（金管局）颁发牌照、没有实体分行、完全通过手机 App 提供服务的全数字虚拟银行：
 
-+.pingandb.com：平安壹账通银行（PAOB）—— 平安集团旗下虚拟银行。
++.pingandb.com：香港平安数字银行（PAOB）—— 平安集团旗下虚拟银行。
 
-+.elebank.com：理慧银行（Livi Bank）—— 由中银香港、京东科技及怡和集团合资成立。
++.elebank.com：象象银行（Elebank Bank）—— 原：小米集团与尚乘集团合资成立被富途证劵合作，现货富途最大股东。
 
 +.za.group：众安银行（ZA Bank）—— 香港第一家也是目前规模较大的虚拟银行。
 
@@ -52,11 +52,10 @@ rules:
 
 +.antbank.hk：蚂蚁银行（Ant Bank）—— 蚂蚁集团旗下虚拟银行（支付宝母公司）。
 
-+.livibank.com：理慧银行（Livi Bank）的另一个常用域名（同 elebank.com 关联）。
++.livibank.com：理慧银行（Livi Bank）—— 由中银香港、京东科技及怡和集团合资成立。
 
 +.fusionbank.com：富融银行（Fusion Bank）—— 腾讯集团、港交所等合资成立。
 
-+.airstarbank.com：天星银行（Airstar Bank）—— 小米集团与尚乘集团合资成立。
 
 三、 香港本土生活与电信
 这些是香港居民日常生活中最常用的民生、消费、娱乐、电讯及政府服务网站：
