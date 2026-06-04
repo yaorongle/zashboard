@@ -1,5 +1,5 @@
 payload:
-  ***** ————富途证劵———— *****
+  # ***** ————富途证劵———— *****
   - +.futuhk.com
   - +.www.futuhk.com
   - +.hk.futuhk.com
@@ -16,7 +16,7 @@ payload:
   - +.openapi.futunn.com
   - +.passport.futunn.com
 
-  ***** ————长桥证劵———— *****
+  # ***** ————长桥证劵———— *****
   - +.www.longbridge.com
   - +.longbridge.com
   - +.api.longbridge.com
