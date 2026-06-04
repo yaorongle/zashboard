@@ -194,6 +194,7 @@ rule-providers:
   apple:                  { <<: *domain, interval: 86366, url: "https://raw.githubusercontent.com/MetaCubeX/meta-rules-dat/meta/geo/geosite/apple.mrs" }
   microsoft:              { <<: *domain, interval: 86539, url: "https://raw.githubusercontent.com/MetaCubeX/meta-rules-dat/meta/geo/geosite/microsoft.mrs" }
   HK-ALL:                 { type: http, behavior: domain, interval: 86400, url: "https://raw.githubusercontent.com/yaorongle/zashboard/refs/heads/main/godcat-rules-dat/hk_all.yaml", path: ./rules/hk_all.yaml }
+  Hong_Kong_Stock:        { type: http, behavior: domain, interval: 86400, url: "https://raw.githubusercontent.com/yaorongle/zashboard/refs/heads/main/godcat-rules-dat/Hong_Kong_Stock.yaml", path: ./rules/Hong_Kong_Stock.yaml }
      
  
   # 音视频
