@@ -27,7 +27,7 @@ dns:
   default-nameserver:
     - 223.5.5.5
     - 182.254.116.116
-    - 202.96.128.86    
+    - 123.123.123.123    
   nameserver:
     - tls://dns.alidns.com:853
     - tls://dot.pub:853
