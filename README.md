@@ -9,7 +9,7 @@
 
 移除：ChatGPT, TikTok移除香港节点
 
-
+-----------------------
 请按照标准格式提问！！！
 【不按此格式提问一律不回答】
 -----------------------
@@ -21,33 +21,6 @@ MC插件版本:
 (是 / 否)
 -----------------------
 DNS模式: Fake-ip
-
-#Fake IP
-dns:
-  enable: true
-  ipv6: true
-  enhanced-mode: fake-ip
-  listen: :23453
-  fake-ip-range: 198.18.0.1/16
-  fake-ip-range6: fdfe:dcba:9876::1/64
-  fake-ip-filter-mode: rule
-  respect-rules: false
-  prefer-h3: false
-  fake-ip-filter:
-    - RULE-SET,cn,real-ip
-    - RULE-SET,private,real-ip
-    - RULE-SET,geolocation-!cn,fake-ip
-    - MATCH,fake-ip
-  default-nameserver:
-    - 223.5.5.5
-    - 182.254.116.116
-    - 202.96.128.86    
-  nameserver:
-    - tls://dns.alidns.com:853
-    - tls://dot.pub:853
-  proxy-nameserver:
-    - tls://one.one.one.one:853
-    - tls://dns.google:853
 -----------------------
 高级设置 > 代理设置 > 代理模式: 
 Redir TCP & Tproxt UDP
