@@ -1,1 +1,22 @@
+payload:
+# —— 传统商业银行 ——
+  - +.ccb.com
+  - +.icbc.com.cn
+  - +.cmbchina.com
+  - +.citicbank.com
+  - +.cib.com.cn
+  - +.hxb.com.cn
+  - +.pingan.com
+  - +.cgbchina.com.cn
+  - +.cmbc.com.cn
+  - +.cscb.cn
+  - +.bankcomm.com
+  - +.boc.cn
+  - +.gzcb.com.cn
+  - +.jjccb.com
+  - +.cebbank.com
+  - +.ghbank.com.cn
 
+# —— 其他金融支付 ——
+  - +.alipay.com
+  - +.cn.unionpay.com
