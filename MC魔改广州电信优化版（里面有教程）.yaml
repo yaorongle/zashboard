@@ -178,6 +178,7 @@ rule-providers:
   bilibili:               { <<: *domain, interval: 86288, url: "https://raw.githubusercontent.com/MetaCubeX/meta-rules-dat/meta/geo/geosite/bilibili.mrs" }
   apple@cn:               { <<: *domain, interval: 86410, url: "https://raw.githubusercontent.com/MetaCubeX/meta-rules-dat/meta/geo/geosite/apple@cn.mrs" }
   microsoft@cn:           { <<: *domain, interval: 86233, url: "https://raw.githubusercontent.com/MetaCubeX/meta-rules-dat/meta/geo/geosite/microsoft@cn.mrs" }
+  cn_bk:                  { type: http, behavior: domain, interval: 86222, url: "https://raw.githubusercontent.com/yaorongle/zashboard/refs/heads/main/godcat-rules-dat/cn_bk.yaml", path: ./rules/cn_bk.yaml }
 
   # 国外域名规则集
   google:                 { <<: *domain, interval: 86514, url: "https://raw.githubusercontent.com/MetaCubeX/meta-rules-dat/meta/geo/geosite/google.mrs" }
@@ -193,7 +194,7 @@ rule-providers:
   cloudflare-cn:          { <<: *domain, interval: 86473, url: "https://raw.githubusercontent.com/MetaCubeX/meta-rules-dat/meta/geo/geosite/cloudflare@cn.mrs" }
   apple:                  { <<: *domain, interval: 86366, url: "https://raw.githubusercontent.com/MetaCubeX/meta-rules-dat/meta/geo/geosite/apple.mrs" }
   microsoft:              { <<: *domain, interval: 86539, url: "https://raw.githubusercontent.com/MetaCubeX/meta-rules-dat/meta/geo/geosite/microsoft.mrs" }
-  HK-ALL:                 { type: http, behavior: domain, interval: 86400, url: "https://raw.githubusercontent.com/yaorongle/zashboard/refs/heads/main/godcat-rules-dat/hk_all.yaml", path: ./rules/hk_all.yaml }
+  hk_all:                 { type: http, behavior: domain, interval: 86400, url: "https://raw.githubusercontent.com/yaorongle/zashboard/refs/heads/main/godcat-rules-dat/hk_all.yaml", path: ./rules/hk_all.yaml }
   HK_Stock:               { type: http, behavior: domain, interval: 86200, url: "https://raw.githubusercontent.com/yaorongle/zashboard/refs/heads/main/godcat-rules-dat/HK_Stock.yaml", path: ./rules/HK_Stock.yaml }
      
  
@@ -236,7 +237,8 @@ rule-providers:
   # =============================== -  匹配逻辑  - ================================
 rules:
   - RULE-SET,HK_Stock,香港
-  - RULE-SET,HK-ALL,香港
+  - RULE-SET,hk_all,香港
+  - RULE-SET,cn_bk,国内网站
   - DOMAIN-SUFFIX,ocbc.com.sg,新加坡
   - DOMAIN-SUFFIX,ocbc.com,新加坡
   - DOMAIN-SUFFIX,ifastgb.com,其他地区
