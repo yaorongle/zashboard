@@ -20,11 +20,10 @@ MC插件版本:
 是否开启路由IPv6支持：
 (是 / 否)
 -----------------------
-DNS模式:
-(Redir-Host / Fake-ip )
+DNS模式: Fake-ip
 -----------------------
-代理模式:
-( Redir TCP / Tproxy TCP / Redir TCP&Tproxt UDP / Tproxy TCP&UDP )
+高级设置 > 代理设置 > 代理模式: 
+Redir TCP & Tproxt UDP
 -----------------------
 IPv6转发:
 (关闭 / 开启)
