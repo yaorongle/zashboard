@@ -1,0 +1,10 @@
+payload:
+  # WhatsApp
+  - +.whatsapp.com
+  - +.wa.me
+  - +.whatsapp.net
+
+  # Threads
+  - +.threads.com
+  - +.threads.net
+  - +.threadsn.net
