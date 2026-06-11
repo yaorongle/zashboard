@@ -46,6 +46,7 @@ payload:
   - +.g.whatsapp.net
   - +.media-hkg4-1.cdn.whatsapp.net
   - +.mmg.whatsapp.net
+  - +.e5.whatsapp.net
 
   # Threads
   - +.threads.com
