@@ -30,7 +30,6 @@ payload:
   - +.gov.hk
 
   # —— 香港通信社交 ——
-payload:
   # WhatsApp Core
   - +.whatsapp.com
   - +.whatsapp.net
@@ -86,20 +85,64 @@ payload:
   - +.e15.whatsapp.net
   - +.e16.whatsapp.net
 
-  # Meta / Facebook dependency used by WhatsApp
-  - +.facebook.com
-  - +.fb.com
-  - +.fbcdn.net
-  - +.fbsbx.com
-  - +.facebook.net
-  - +.graph.facebook.com
-  - +.connect.facebook.net
-  - +.static.xx.fbcdn.net
-  - +.scontent.xx.fbcdn.net
-
-
-
-  # Threads
+  # Threads Core
   - +.threads.com
   - +.threads.net
   - +.threadsn.net
+
+  # Threads Web / API / Redirect
+  - +.www.threads.com
+  - +.www.threads.net
+  - +.api.threads.com
+  - +.api.threads.net
+  - +.graph.threads.net
+  - +.graph.threads.com
+
+  # Instagram dependency
+  - +.instagram.com
+  - +.instagr.am
+  - +.cdninstagram.com
+  - +.ig.me
+
+  # Instagram / Threads media CDN
+  - +.scontent.cdninstagram.com
+  - +.scontent-iad3-1.cdninstagram.com
+  - +.scontent-lax3-1.cdninstagram.com
+  - +.scontent-hkg4-1.cdninstagram.com
+  - +.scontent-hkg1-2.cdninstagram.com
+  - +.instagram.fsin10-1.fna.fbcdn.net
+  - +.instagram.fhkg4-1.fna.fbcdn.net
+  - +.instagram.flax3-1.fna.fbcdn.net
+
+  # Meta / Facebook dependency
+  - +.facebook.com
+  - +.facebook.net
+  - +.fb.com
+  - +.fb.me
+  - +.fbcdn.net
+  - +.fbsbx.com
+  - +.meta.com
+  - +.metastack.com
+
+  # Meta API / Login / Graph
+  - +.graph.facebook.com
+  - +.connect.facebook.net
+  - +.platform.facebook.com
+  - +.gateway.facebook.com
+  - +.mqtt.facebook.com
+  - +.b-graph.facebook.com
+  - +.graph.instagram.com
+  - +.i.instagram.com
+  - +.z-p42-instagram.c10r.facebook.com
+
+  # Meta static / CDN
+  - +.static.xx.fbcdn.net
+  - +.scontent.xx.fbcdn.net
+  - +.lookaside.facebook.com
+  - +.lookaside.instagram.com
+
+  # Meta app / crash / telemetry
+  - +.crashlytics.com
+  - +.facebook-hardware.com
+  - +.analytics.facebook.com
+  - +.events.facebook.com
