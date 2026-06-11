@@ -36,7 +36,6 @@ payload:
   - +.whatsapp.net
   - +.web.whatsapp.com
   - +.g-fallback.whatsapp.net
-  - +.media-lax3-1.cdn.whatsapp.net
   - +.dit.whatsapp.net
   - +.api.whatsapp.net
   - +.crashlogs.whatsapp.net
@@ -44,11 +43,19 @@ payload:
   - +.static.whatsapp.net
   - +.graph.whatsapp.com
   - +.g.whatsapp.net
+  - +.mmg.whatsapp.net
+  - +.media-lax3-1.cdn.whatsapp.net
   - +.media-hkg4-1.cdn.whatsapp.net
   - +.media-hkg1-2.cdn.whatsapp.net
-  - +.mmg.whatsapp.net
+  - +.e1.whatsapp.net
+  - +.e2.whatsapp.net
+  - +.e3.whatsapp.net   
   - +.e4.whatsapp.net
   - +.e5.whatsapp.net
+  - +.e6.whatsapp.net
+  - +.e7.whatsapp.net
+  - +.e8.whatsapp.net
+
 
 
   # Threads
