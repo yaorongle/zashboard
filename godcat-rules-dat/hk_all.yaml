@@ -43,6 +43,7 @@ payload:
   - +.pps.whatsapp.net
   - +.static.whatsapp.net
   - +.graph.whatsapp.com
+  - +.g.whatsapp.net
 
   # Threads
   - +.threads.com
