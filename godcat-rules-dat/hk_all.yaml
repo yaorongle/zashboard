@@ -28,3 +28,15 @@ payload:
   - +.tvb.com
   - +.mytvsuper.com
   - +.gov.hk
+
+  # —— 香港通信社交 ——
+  # WhatsApp
+  - +.whatsapp.com
+  - +.wa.me
+  - +.whatsapp.net
+  - +.web.whatsapp.com
+
+  # Threads
+  - +.threads.com
+  - +.threads.net
+  - +.threadsn.net
