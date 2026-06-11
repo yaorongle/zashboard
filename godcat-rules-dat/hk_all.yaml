@@ -39,6 +39,9 @@ payload:
   - +.media-lax3-1.cdn.whatsapp.net
   - +.dit.whatsapp.net
   - +.api.whatsapp.net
+  - +.crashlogs.whatsapp.net
+  - +.pps.whatsapp.net
+  - +.static.whatsapp.net
 
   # Threads
   - +.threads.com
