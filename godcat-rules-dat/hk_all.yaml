@@ -96,9 +96,3 @@ payload:
   - +.api.threads.net
   - +.graph.threads.net
   - +.graph.threads.com
-
-  # Instagram dependency
-  - +.instagram.com
-  - +.instagr.am
-  - +.cdninstagram.com
-  - +.ig.me
