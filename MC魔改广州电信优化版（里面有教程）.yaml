@@ -115,6 +115,7 @@ proxy-groups:
   - { name: Instagram,  <<: *prefer_proxy,     icon: https://raw.githubusercontent.com/Koolson/Qure/master/IconSet/Color/Instagram.png }
   - { name: Facebook,   <<: *prefer_proxy,     icon: https://raw.githubusercontent.com/Koolson/Qure/master/IconSet/Color/Facebook.png }
   - { name: Cloudflare, <<: *prefer_proxy,     icon: https://raw.githubusercontent.com/Koolson/Qure/master/IconSet/Color/Cloudflare.png }
+  - { name: Threads,    <<: *prefer_proxy,     icon: https://raw.githubusercontent.com/yaorongle/zashboard/main/logo/Threads.png} 
 
   # 音视频
   - { name: Spotify,    <<: *prefer_proxy,     icon: https://raw.githubusercontent.com/Koolson/Qure/master/IconSet/Color/Spotify.png }
@@ -190,6 +191,7 @@ rule-providers:
   cloudflare-cn:          { <<: *domain, interval: 86473, url: "https://raw.githubusercontent.com/MetaCubeX/meta-rules-dat/meta/geo/geosite/cloudflare@cn.mrs" }
   apple:                  { <<: *domain, interval: 86366, url: "https://raw.githubusercontent.com/MetaCubeX/meta-rules-dat/meta/geo/geosite/apple.mrs" }
   microsoft:              { <<: *domain, interval: 86539, url: "https://raw.githubusercontent.com/MetaCubeX/meta-rules-dat/meta/geo/geosite/microsoft.mrs" }
+  threads:                { <<: *domain, interval: 86540, url: "https://github.com/MetaCubeX/meta-rules-dat/blob/meta/geo/geosite/threads.list" }
   hk_all:                 { type: http, behavior: domain, interval: 86400, url: "https://raw.githubusercontent.com/yaorongle/zashboard/refs/heads/main/godcat-rules-dat/hk_all.yaml", path: ./rules/hk_all.yaml }
   HK_Stock:               { type: http, behavior: domain, interval: 86200, url: "https://raw.githubusercontent.com/yaorongle/zashboard/refs/heads/main/godcat-rules-dat/HK_Stock.yaml", path: ./rules/HK_Stock.yaml }
      
