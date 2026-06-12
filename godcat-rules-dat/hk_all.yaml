@@ -115,6 +115,3 @@ payload:
 
   # Meta / Facebook dependency
   - +.facebook.com
-  - +.facebook.net
-  - +.fb.com
-  - +.fb.me
