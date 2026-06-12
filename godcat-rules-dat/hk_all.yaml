@@ -56,3 +56,9 @@ payload:
   - +.support.longbridge.global
   - +.longbridge.cloud
   - +.api-status.longbridgeapp.com
+
+    # ***** ————长桥证劵———— *****
+  - +.usmart.hk
+  - +.hk.usmartglobal.com
+  - +.usmart66.com
+    
