@@ -235,7 +235,6 @@ rule-providers:
 
   # =============================== -  匹配逻辑  - ================================
 rules:
-  - RULE-SET,HK_Stock,香港
   - RULE-SET,hk_all,香港
   - RULE-SET,cn_bk,国内网站
   - DOMAIN-SUFFIX,ocbc.com.sg,新加坡
