@@ -120,7 +120,7 @@ proxy-groups:
   - { name: Spotify,    <<: *prefer_proxy,     icon: https://raw.githubusercontent.com/Koolson/Qure/master/IconSet/Color/Spotify.png }
   - { name: Netflix,    <<: *prefer_proxy,     icon: https://raw.githubusercontent.com/Koolson/Qure/master/IconSet/Color/Netflix.png }
   - { name: TikTok,     <<: *prefer_proxy,     icon: https://raw.githubusercontent.com/Koolson/Qure/master/IconSet/Color/TikTok.png, proxies: [ 美国, 日本, 新加坡, 韩国, 台湾, 其他地区, 手动选择 ] }
-  - { name: Porn,       <<: *prefer_proxy,     icon: https://raw.githubusercontent.com/Koolson/Qure/master/IconSet/Color/Pornhub.png, proxies: [ 美国, 日本, 新加坡, 韩国, 香港, 台湾, 其他地区, 默认代理, 手动选择 ] } 
+  - { name: Whatsapp,   <<: *prefer_proxy,     icon: https://raw.githubusercontent.com/Koolson/Qure/master/IconSet/Color/Whatsapp.png, proxies: [ 美国, 日本, 新加坡, 韩国, 香港, 台湾, 其他地区, 默认代理, 手动选择 ] } 
   - { name: Emby,       <<: *prefer_proxy,     icon: https://raw.githubusercontent.com/Koolson/Qure/master/IconSet/Color/Emby.png} 
   - { name: Disney,     <<: *prefer_proxy,     icon: https://raw.githubusercontent.com/Koolson/Qure/master/IconSet/Color/Disney.png} 
    # 测速服务
@@ -198,9 +198,10 @@ rule-providers:
   spotify:                { <<: *domain, interval: 86208, url: "https://raw.githubusercontent.com/MetaCubeX/meta-rules-dat/meta/geo/geosite/spotify.mrs" }
   netflix:                { <<: *domain, interval: 86691, url: "https://raw.githubusercontent.com/MetaCubeX/meta-rules-dat/meta/geo/geosite/netflix.mrs" }
   tiktok:                 { <<: *domain, interval: 86134, url: "https://raw.githubusercontent.com/MetaCubeX/meta-rules-dat/meta/geo/geosite/tiktok.mrs" }
-  porn:                   { <<: *domain, interval: 86444, url: "https://raw.githubusercontent.com/MetaCubeX/meta-rules-dat/meta/geo/geosite/category-porn.mrs"}
+  whatsapp:               { <<: *domain, interval: 86444, url: "https://github.com/MetaCubeX/meta-rules-dat/raw/refs/heads/meta/geo/geosite/whatsapp.mrs"}
   emby:                   { <<: *domain, interval: 86255, url: "https://github.com/666OS/rules/raw/release/mihomo/domain/Emby.mrs"}
   disney:                 { <<: *domain, interval: 86567, url: "https://raw.githubusercontent.com/MetaCubeX/meta-rules-dat/meta/geo/geosite/disney.mrs"}
+                                                               
 
 
   # 测速服务
