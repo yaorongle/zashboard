@@ -1,5 +1,5 @@
 ﻿# =========================================================================
-#                Magic Catling2 优化配置配合1.2.2 🐱大神猫🐱               #
+#                 Tiger Clash 优化配置配合1.0.0 🐱大神猫🐱               #
 #                                                 -- Mihomo v1.19.27+     #
 #                看下面有教程的字，哪些复制哪些粘贴                          #
 #                                                                         #
@@ -31,7 +31,6 @@ dns:
   nameserver:
     - https://doh.pub/dns-query
     - https://dns.alidns.com/dns-query
-
 
 #==============================复制粘贴而已，也不能删除===================================
 
@@ -116,12 +115,13 @@ proxy-groups:
   - { name: Instagram,  <<: *prefer_proxy,     icon: https://raw.githubusercontent.com/Koolson/Qure/master/IconSet/Color/Instagram.png }
   - { name: Facebook,   <<: *prefer_proxy,     icon: https://raw.githubusercontent.com/Koolson/Qure/master/IconSet/Color/Facebook.png }
   - { name: Cloudflare, <<: *prefer_proxy,     icon: https://raw.githubusercontent.com/Koolson/Qure/master/IconSet/Color/Cloudflare.png }
+  - { name: Threads,    <<: *prefer_proxy,     icon: https://raw.githubusercontent.com/yaorongle/zashboard/main/logo/threads.png} 
 
   # 音视频
   - { name: Spotify,    <<: *prefer_proxy,     icon: https://raw.githubusercontent.com/Koolson/Qure/master/IconSet/Color/Spotify.png }
   - { name: Netflix,    <<: *prefer_proxy,     icon: https://raw.githubusercontent.com/Koolson/Qure/master/IconSet/Color/Netflix.png }
   - { name: TikTok,     <<: *prefer_proxy,     icon: https://raw.githubusercontent.com/Koolson/Qure/master/IconSet/Color/TikTok.png, proxies: [ 美国, 日本, 新加坡, 韩国, 台湾, 其他地区, 手动选择 ] }
-  - { name: Porn,       <<: *prefer_proxy,     icon: https://raw.githubusercontent.com/Koolson/Qure/master/IconSet/Color/Pornhub.png, proxies: [ 美国, 日本, 新加坡, 韩国, 香港, 台湾, 其他地区, 默认代理, 手动选择 ] } 
+  - { name: Whatsapp,   <<: *prefer_proxy,     icon: https://raw.githubusercontent.com/yaorongle/zashboard/main/logo/whatsapp.png, proxies: [ 美国, 日本, 新加坡, 韩国, 香港, 台湾, 其他地区, 默认代理, 手动选择 ] } 
   - { name: Emby,       <<: *prefer_proxy,     icon: https://raw.githubusercontent.com/Koolson/Qure/master/IconSet/Color/Emby.png} 
   - { name: Disney,     <<: *prefer_proxy,     icon: https://raw.githubusercontent.com/Koolson/Qure/master/IconSet/Color/Disney.png} 
    # 测速服务
@@ -191,6 +191,7 @@ rule-providers:
   cloudflare-cn:          { <<: *domain, interval: 86473, url: "https://raw.githubusercontent.com/MetaCubeX/meta-rules-dat/meta/geo/geosite/cloudflare@cn.mrs" }
   apple:                  { <<: *domain, interval: 86366, url: "https://raw.githubusercontent.com/MetaCubeX/meta-rules-dat/meta/geo/geosite/apple.mrs" }
   microsoft:              { <<: *domain, interval: 86539, url: "https://raw.githubusercontent.com/MetaCubeX/meta-rules-dat/meta/geo/geosite/microsoft.mrs" }
+  threads:                { <<: *domain, interval: 86540, url: "https://github.com/MetaCubeX/meta-rules-dat/blob/meta/geo/geosite/threads.list" }
   hk_all:                 { type: http, behavior: domain, interval: 86400, url: "https://raw.githubusercontent.com/yaorongle/zashboard/refs/heads/main/godcat-rules-dat/hk_all.yaml", path: ./rules/hk_all.yaml }
   HK_Stock:               { type: http, behavior: domain, interval: 86200, url: "https://raw.githubusercontent.com/yaorongle/zashboard/refs/heads/main/godcat-rules-dat/HK_Stock.yaml", path: ./rules/HK_Stock.yaml }
      
@@ -199,9 +200,10 @@ rule-providers:
   spotify:                { <<: *domain, interval: 86208, url: "https://raw.githubusercontent.com/MetaCubeX/meta-rules-dat/meta/geo/geosite/spotify.mrs" }
   netflix:                { <<: *domain, interval: 86691, url: "https://raw.githubusercontent.com/MetaCubeX/meta-rules-dat/meta/geo/geosite/netflix.mrs" }
   tiktok:                 { <<: *domain, interval: 86134, url: "https://raw.githubusercontent.com/MetaCubeX/meta-rules-dat/meta/geo/geosite/tiktok.mrs" }
-  porn:                   { <<: *domain, interval: 86444, url: "https://raw.githubusercontent.com/MetaCubeX/meta-rules-dat/meta/geo/geosite/category-porn.mrs"}
+  whatsapp:               { <<: *domain, interval: 86444, url: "https://github.com/MetaCubeX/meta-rules-dat/raw/refs/heads/meta/geo/geosite/whatsapp.mrs"}
   emby:                   { <<: *domain, interval: 86255, url: "https://github.com/666OS/rules/raw/release/mihomo/domain/Emby.mrs"}
   disney:                 { <<: *domain, interval: 86567, url: "https://raw.githubusercontent.com/MetaCubeX/meta-rules-dat/meta/geo/geosite/disney.mrs"}
+                                                               
 
 
   # 测速服务
@@ -263,7 +265,7 @@ rules:
   - RULE-SET,steam-cn,DIRECT
   - RULE-SET,steam,Steam
   - RULE-SET,xbox,Xbox
-  - RULE-SET,porn,Porn
+  - RULE-SET,whatsapp,Whatsapp
   - RULE-SET,youtube,YouTube
   - RULE-SET,google,Google
   - RULE-SET,github,GitHub
@@ -275,6 +277,7 @@ rules:
   - RULE-SET,netflix,Netflix
   - RULE-SET,tiktok,TikTok
   - RULE-SET,speedtest,Speedtest
+  - RULE-SET,threads,Threads
   - RULE-SET,nintendo,Nintendo
   - RULE-SET,nintendo@cn,DIRECT
   - RULE-SET,playstation,PlayStation
