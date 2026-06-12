@@ -103,15 +103,5 @@ payload:
   - +.cdninstagram.com
   - +.ig.me
 
-  # Instagram / Threads media CDN
-  - +.scontent.cdninstagram.com
-  - +.scontent-iad3-1.cdninstagram.com
-  - +.scontent-lax3-1.cdninstagram.com
-  - +.scontent-hkg4-1.cdninstagram.com
-  - +.scontent-hkg1-2.cdninstagram.com
-  - +.instagram.fsin10-1.fna.fbcdn.net
-  - +.instagram.fhkg4-1.fna.fbcdn.net
-  - +.instagram.flax3-1.fna.fbcdn.net
-
   # Meta / Facebook dependency
   - +.facebook.com
