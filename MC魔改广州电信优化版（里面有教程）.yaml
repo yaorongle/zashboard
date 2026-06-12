@@ -115,7 +115,7 @@ proxy-groups:
   - { name: Instagram,  <<: *prefer_proxy,     icon: https://raw.githubusercontent.com/Koolson/Qure/master/IconSet/Color/Instagram.png }
   - { name: Facebook,   <<: *prefer_proxy,     icon: https://raw.githubusercontent.com/Koolson/Qure/master/IconSet/Color/Facebook.png }
   - { name: Cloudflare, <<: *prefer_proxy,     icon: https://raw.githubusercontent.com/Koolson/Qure/master/IconSet/Color/Cloudflare.png }
-  - { name: Threads,    <<: *prefer_proxy,     icon: https://raw.githubusercontent.com/yaorongle/zashboard/main/logo/Threads.png} 
+  - { name: Threads,    <<: *prefer_proxy,     icon: https://raw.githubusercontent.com/yaorongle/zashboard/main/logo/threads.png} 
 
   # 音视频
   - { name: Spotify,    <<: *prefer_proxy,     icon: https://raw.githubusercontent.com/Koolson/Qure/master/IconSet/Color/Spotify.png }
