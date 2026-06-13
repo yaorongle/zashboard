@@ -124,7 +124,7 @@ proxy-groups:
   - { name: Whatsapp,   <<: *prefer_proxy,     icon: https://raw.githubusercontent.com/yaorongle/zashboard/main/logo/whatsapp.png, proxies: [ 美国, 日本, 新加坡, 韩国, 香港, 台湾, 其他地区, 默认代理, 手动选择 ] } 
   - { name: Emby,       <<: *prefer_proxy,     icon: https://raw.githubusercontent.com/Koolson/Qure/master/IconSet/Color/Emby.png} 
   - { name: Disney,     <<: *prefer_proxy,     icon: https://raw.githubusercontent.com/Koolson/Qure/master/IconSet/Color/Disney.png} 
-  - { name: Mytvsuper,     <<: *prefer_proxy,  icon: https://raw.githubusercontent.com/yaorongle/zashboard/main/logo/Mytvsuper.png, proxies: [ 香港] }
+  - { name: Apple-Intelligence,     <<: *prefer_proxy,  icon: https://raw.githubusercontent.com/yaorongle/zashboard/main/logo/apple-intelligence.png, proxies: [ 美国, 香港, 日本, 默认代理, 手动选择] }
    # 测速服务
   - { name: Speedtest,  <<: *prefer_proxy,     icon: https://raw.githubusercontent.com/Koolson/Qure/master/IconSet/Color/Speedtest.png }
    # 游戏服务
@@ -205,7 +205,7 @@ rule-providers:
   whatsapp:               { <<: *domain, interval: 86444, url: "https://github.com/MetaCubeX/meta-rules-dat/raw/refs/heads/meta/geo/geosite/whatsapp.mrs"}
   emby:                   { <<: *domain, interval: 86255, url: "https://github.com/666OS/rules/raw/release/mihomo/domain/Emby.mrs"}
   disney:                 { <<: *domain, interval: 86567, url: "https://raw.githubusercontent.com/MetaCubeX/meta-rules-dat/meta/geo/geosite/disney.mrs"}
-  mytvsuper:              { <<: *domain, interval: 86135, url: "https://raw.githubusercontent.com/MetaCubeX/meta-rules-dat/meta/geo/geosite/mytvsuper.mrs"}
+  apple-intelligence:     { <<: *domain, interval: 86135, url: "https://raw.githubusercontent.com/MetaCubeX/meta-rules-dat/meta/geo/geosite/apple-intelligence.mrs"}
                                                                
 
 
