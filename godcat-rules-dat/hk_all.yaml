@@ -56,6 +56,8 @@ payload:
   - +.support.longbridge.global
   - +.longbridge.cloud
   - +.api-status.longbridgeapp.com
+  - +.api.lbkrs.com
+  - +.api-gl.lbkrs.com
 
     # ***** ————盈立证劵———— *****
   - +.usmart.hk
