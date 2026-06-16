@@ -22,3 +22,6 @@ payload:
 # —— 其他金融支付 ——
   - +.alipay.com
   - +.cn.unionpay.com
+
+# —— 破解 Adobe ——
+  - +.adobe.com
