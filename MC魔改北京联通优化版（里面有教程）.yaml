@@ -244,6 +244,9 @@ rules:
   # 1. 广告拦截 (最高优先级)
   - RULE-SET,category-ads-all,REJECT
   - RULE-SET,ad_ip,REJECT,no-resolve
+  - DOMAIN-SUFFIX,adobe.io,REJECT
+  - DOMAIN-SUFFIX,adobestats.io,REJECT
+  - DOMAIN-KEYWORD,adobe,REJECT
 
   # 2. 内网与私有网络 (直连)
   - RULE-SET,private_ip,DIRECT,no-resolve
