@@ -7,30 +7,34 @@
 # =========================================================================
 
 # ============================= - fake-ip 的规则 - ============================
-
-#Fake IP
 dns:
   enable: true
   ipv6: false
+  cache-algorithm: arc
   enhanced-mode: fake-ip
-  listen: :23453 
+  listen: :23453
   fake-ip-range: 198.18.0.1/16
-  fake-ip-range6: fdfe:dcba:9876::1/64
   fake-ip-filter-mode: rule
   respect-rules: false
   prefer-h3: false
   fake-ip-filter:
-  - RULE-SET,cn,real-ip
-  - RULE-SET,private,real-ip
-  - RULE-SET,geolocation-!cn,fake-ip
-  - MATCH,real-ip #可以根据自己需求改：fake-ip
+   - RULE-SET,private,real-ip
+   - RULE-SET,category-pt,real-ip      
+   - RULE-SET,apple@cn,real-ip
+   - RULE-SET,cn,real-ip     
+   - RULE-SET,cloudflare@cn,real-ip
+   - RULE-SET,microsoft@cn,real-ip    
   default-nameserver:
-    - 223.5.5.5
     - 182.254.116.116
+    - 223.5.5.5
     - 202.96.128.86 
+  direct-nameserver:
+    - https://doh.pub/dns-query#disable-qtype-65=true  
+    - https://dns.alidns.com/dns-query#disable-qtype-65=true
   nameserver:
-    - https://doh.pub/dns-query
-    - https://dns.alidns.com/dns-query
+    - https://doh.pub/dns-query#disable-qtype-65=true  
+    - https://dns.alidns.com/dns-query#disable-qtype-65=true
+
 
 #==============================复制粘贴而已，也不能删除===================================
 
