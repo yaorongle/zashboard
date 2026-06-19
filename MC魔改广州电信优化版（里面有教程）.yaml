@@ -35,7 +35,6 @@ dns:
     - https://doh.pub/dns-query#disable-qtype-65=true  
     - https://dns.alidns.com/dns-query#disable-qtype-65=true
 
-
 #==============================复制粘贴而已，也不能删除===================================
 
 #===================复制上面DNS这个区域去MC插件里面的fake-ip的地方粘贴======================
@@ -44,53 +43,68 @@ dns:
 
 #============ 然后选择好后在订阅管理第一行上传这个yaml订阅，上传好后上面配置文件选择这个上传的启动 ==================
 
+
 port: 7890
 proxies:
 
 # ================================================ - 机场配置模块 - ===========================================
-provider_config:                                         
-  &provider_config { "type": "http", "interval": 86400, "proxy": "DIRECT", "health-check": { "enable": true, "url": "http://www.apple.com/library/test/success.html", "interval": 300, "timeout": 5000, "lazy": true }, "filter": "^(?!.*(群|邀请|返利|循环|官网|客服|网站|网址|获取|订阅|流量|到期|机场|下次|版本|官址|备用|过期|已用|联系|邮箱|工单|贩卖|通知|倒卖|防止|国内|地址|频道|无法|说明|使用|提示|特别|访问|支持|教程|关注|更新|作者|加入|USE|USED|TOTAL|EXPIRE|EMAIL|Panel|Channel|Author))" }
+
+# 锚点 -  代理提供者模板 - 订阅源基础配置
+provider_config: &provider_config { "type": "http", "interval": 86400, "proxy": "DIRECT", "health-check": { "enable": true, "url": "https://www.google.com/generate_204", "interval": 300, "lazy": true } }
 
 # ================================================ - 订阅位置 - ==============================================
 proxy-providers:
 # 第一个机场
-  vip:
+  vip1:
     url: http://############################### #修改你的机场1订阅地址（有些anytls节点的需要后面加：&flag=anytls）
     <<: *provider_config
-    user-agent: "clash.meta.mihomo" #默认或者修改这里为你机场1的UA
+    user-agent: "clash.meta.mihomo" #默认或者修改这里为你机场的UA    
     override:
-      additional-prefix: "[vip]"
+      additional-prefix: "[主线路]"
       udp: true #如果不能用就改：false
 
 # 第二个机场
   vip2:
-    url: http://############################### #修改你的机场2订阅地址
+    url: http://############################### #修改你的机场1订阅地址
     <<: *provider_config
-    user-agent: "clash.meta.mihomo" #默认或者修改这里为你机场2的UA
+    user-agent: "clash.meta.mihomo" #默认或者修改这里为你机场的UA    
     override:
-      additional-prefix: "[vip2]"
+      additional-prefix: "[副本]"
       udp: true #如果不能用就改：false
+
 
 # 第三个机场
   vip3:
-    url: http://############################### #修改你的机场3订阅地址
+    url: http://############################### #修改你的机场1订阅地址
     <<: *provider_config
-    user-agent: "clash.meta.mihomo" #默认或者修改这里为你机场3的UA
+    user-agent: "clash.meta.mihomo" #默认或者修改这里为你机场的UA    
     override:
-      additional-prefix: "[vip3]"
+      additional-prefix: "[助力]"
       udp: true #如果不能用就改：false
 
 
-
 # ============================================= - ⚓️ 锚点区开始 - =============================================
-# 锚点 -  代理优先
-prefer_proxy: &prefer_proxy { "type": "select", "proxies": [ "默认代理", "节点选择", "自动选择", "手动选择", "香港", "美国", "日本", "台湾", "新加坡", "韩国", "其他地区", "DIRECT" ] }
-
-# 锚点 -  直连优先
-prefer_direct: &prefer_direct { "type": "select", "proxies": [ "DIRECT", "节点选择", "自动选择", "手动选择", "香港", "美国", "日本", "台湾", "新加坡", "韩国", "其他地区" ] }
-
 # 锚点 -  自动选择
-url_test: &url_test { "type": "url-test", "interval": 120, "tolerance": 30, "lazy": true, "url": "https://www.apple.com/library/test/success.html", "disable-udp": false, "timeout": 3000, "max-failed-times": 3, "hidden": false, "include-all": true }
+url_test: &url_test { type: url-test, interval: 300, tolerance: 100, lazy: true, url: "http://cp.cloudflare.com/generate_204", disable-udp: false, timeout: 3000, max-failed-times: 3, hidden: false, include-all: true }
+
+# 锚点 - 负载均衡测速策略模块
+LoadBalanceCH: &LoadBalanceCH {type: load-balance, interval: 300, lazy: true, url: 'http://cp.cloudflare.com/generate_204', disable-udp: false, strategy: consistent-hashing, timeout: 2000, max-failed-times: 3, hidden: false}
+
+# 锚点 - 故障转移测速策略模块
+FallBack: &FallBack {type: fallback, interval: 300, lazy: true, url: 'http://cp.cloudflare.com/generate_204', disable-udp: false, timeout: 2000, max-failed-times: 4, hidden: false }
+
+
+# 锚点 -  策略组代理列表模板 - 预定义的代理节点优先级排序
+# 锚点 -  直连优先
+prefer_direct: &prefer_direct { "type": "select", "proxies": [ DIRECT, 默认代理, 手动选择, 指定节点 ] }
+# 锚点 -  默认代理优先
+prefer_moren: &prefer_moren { "type": "select", "proxies": [  手动选择, 指定节点, 自动选择, 香港, 美国, 日本, 台湾, 新加坡, 韩国, 德国, 法国, 英国, 荒郊地区, DIRECT ] }
+# 锚点 -  代理优先
+prefer_proxy: &prefer_proxy { "type": "select", "proxies": [  默认代理, 负载均衡, 故障转移, 自动选择, 手动选择, 指定节点, 香港, 美国, 日本, 台湾, 新加坡, 韩国, 德国, 法国, 英国, 荒郊地区, DIRECT ] }
+# 锚点 -  AI
+prefer_AI: &prefer_AI { "type": "select", "proxies": [ 默认代理, 智能故转, 负载均衡, 自动选择, 手动选择, 指定节点, 香港, 美国, 日本, 台湾, 新加坡, 韩国, 德国, 法国, 英国, 荒郊地区, DIRECT ] }
+
+
 # ============================================= - ⚓️ 锚点区结束 - ==============================================
 
 # =============================================  -  域名策略组  - ===============================================
