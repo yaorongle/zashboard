@@ -56,34 +56,33 @@ provider_config: &provider_config { "type": "http", "interval": 86400, "proxy": 
 
 # ================================================ - 订阅位置 - ==============================================
 proxy-providers:
-# 第一个机场
+# 第一线路
   vip1:
-    url: http://############################### #修改你的机场1订阅地址（有些anytls节点的需要后面加：&flag=anytls）
+    url: http://############################### #修改你的线路1订阅地址（有些anytls节点的需要后面加：&flag=anytls）
     <<: *provider_config
-    user-agent: "clash.meta.mihomo" #默认或者修改这里为你机场的UA    
+    user-agent: "clash.meta.mihomo" #默认或者修改这里为你线路的UA    
     override:
-      additional-prefix: "[主线路]"
+      additional-prefix: "[🧚皇🧚]"
       udp: true #如果不能用就改：false
 
-# 第二个机场
+# 第二线路
   vip2:
-    url: http://############################### #修改你的机场1订阅地址
+    url: http://############################### #修改你的线路2订阅地址
     <<: *provider_config
-    user-agent: "clash.meta.mihomo" #默认或者修改这里为你机场的UA    
+    user-agent: "clash.meta.mihomo" #默认或者修改这里为你线路的UA    
     override:
-      additional-prefix: "[辅助线路]"
+      additional-prefix: "[🧚守护🧚]"
       udp: true #如果不能用就改：false
 
 
-# 第三个机场
+# 第三线路
   vip3:
-    url: http://############################### #修改你的机场1订阅地址
+    url: http://############################### #修改你的线路3订阅地址
     <<: *provider_config
-    user-agent: "clash.meta.mihomo" #默认或者修改这里为你机场的UA    
+    user-agent: "clash.meta.mihomo" #默认或者修改这里为你线路的UA    
     override:
-      additional-prefix: "[主力线路]"
+      additional-prefix: "[🧚精灵🧚]"
       udp: true #如果不能用就改：false
-
 
 # ============================================= - ⚓️ 锚点区开始 - =============================================
 # 锚点 -  自动选择
