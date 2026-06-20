@@ -62,7 +62,7 @@ proxy-providers:
     <<: *provider_config
     user-agent: "clash.meta.mihomo" #默认或者修改这里为你线路的UA    
     override:
-      additional-prefix: "[🧚皇🧚]"
+      additional-prefix: "[皇]"
       udp: true #如果不能用就改：false
 
 # 第二线路
@@ -71,7 +71,7 @@ proxy-providers:
     <<: *provider_config
     user-agent: "clash.meta.mihomo" #默认或者修改这里为你线路的UA    
     override:
-      additional-prefix: "[🧚守护🧚]"
+      additional-prefix: "[守护]"
       udp: true #如果不能用就改：false
 
 
@@ -81,7 +81,7 @@ proxy-providers:
     <<: *provider_config
     user-agent: "clash.meta.mihomo" #默认或者修改这里为你线路的UA    
     override:
-      additional-prefix: "[🧚精灵🧚]"
+      additional-prefix: "[精灵]"
       udp: true #如果不能用就改：false
 
 # ============================================= - ⚓️ 锚点区开始 - =============================================
