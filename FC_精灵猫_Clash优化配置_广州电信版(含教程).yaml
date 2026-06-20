@@ -14,7 +14,7 @@ dns:
   ipv6: false
   enhanced-mode: fake-ip
   listen: :23453
-  tcp-concurrent: 2048
+  tcp-concurrent: 512
   fake-ip-range: 198.18.0.1/16
   fake-ip-range6: fdfe:dcba:9876::1/64
   fake-ip-filter-mode: rule
