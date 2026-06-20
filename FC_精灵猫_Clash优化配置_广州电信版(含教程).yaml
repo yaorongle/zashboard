@@ -310,6 +310,18 @@ rules:
   - RULE-SET,cn,DIRECT
   - RULE-SET,cn_ip,DIRECT,no-resolve
 
-  # 10. 最终兜底规则
+  # 10. 游戏服务
+  - RULE-SET,xbox,Xbox
+  - RULE-SET,steam,Steam
+  - RULE-SET,nintendo,Nintendo
+  - RULE-SET,playstation,PlayStation       
+
+  # 11. 国内禁的网站
+  - RULE-SET,gfw,国外网站
+
+  # 12. 禁 QUIC（UDP 443）
+  - AND,((NETWORK,UDP),(DST-PORT,443)),REJECT
+
+  # 13. 最终兜底规则
   - MATCH,漏网之鱼
 # ===============================================  -  EOF - =======================================================
