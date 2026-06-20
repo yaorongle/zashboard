@@ -241,7 +241,7 @@ rules:
   - RULE-SET,cn_bk,国内网站
   - DOMAIN-SUFFIX,ocbc.com.sg,新加坡
   - DOMAIN-SUFFIX,ocbc.com,新加坡
-  - DOMAIN-SUFFIX,ifastgb.com,其他地区
+  - DOMAIN-SUFFIX,ifastgb.com,美国
 
   # 1. 广告拦截 (最高优先级)
   - RULE-SET,category-ads-all,REJECT
