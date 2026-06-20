@@ -143,7 +143,7 @@ proxy-groups:
 
   # 社交平台策略
   - { name: Telegram,               <<: *prefer_proxy,     icon: https://raw.githubusercontent.com/Koolson/Qure/master/IconSet/Color/Telegram.png }
-  - { name: Whatsapp,               <<: *prefer_proxy,     icon: https://raw.githubusercontent.com/Koolson/Qure/master/IconSet/Color/WeChat.png }
+  - { name: Whatsapp,               <<: *prefer_proxy,     icon: https://raw.githubusercontent.com/yaorongle/zashboard/main/logo/whatsapp.png }
   - { name: Twitter,                <<: *prefer_proxy,     icon: https://raw.githubusercontent.com/Koolson/Qure/master/IconSet/Color/Twitter.png }
   - { name: Instagram,              <<: *prefer_proxy,     icon: https://raw.githubusercontent.com/Koolson/Qure/master/IconSet/Color/Instagram.png }
   - { name: Facebook,               <<: *prefer_proxy,     icon: https://raw.githubusercontent.com/Koolson/Qure/master/IconSet/Color/Facebook.png }
