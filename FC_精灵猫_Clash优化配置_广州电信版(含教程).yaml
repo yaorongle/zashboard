@@ -293,7 +293,7 @@ rules:
   - RULE-SET,cloudflare-cn,DIRECT
   - RULE-SET,cloudflare,Cloudflare
 
-  # 国外网站
+  # 7. 国外网站
   - RULE-SET,geolocation-!cn,国外网站
   
   # 8. IP 规则分流 (no-resolve)
