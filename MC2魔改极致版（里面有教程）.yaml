@@ -328,6 +328,7 @@ rules:
   - RULE-SET,bilibili,Bilibili
   - RULE-SET,apple@cn,DIRECT
   - RULE-SET,apple,Apple
+  - RULE-SET,github,GitHub
   - RULE-SET,microsoft@cn,DIRECT
   - RULE-SET,microsoft,Microsoft  
 
