@@ -131,10 +131,6 @@ proxy-groups:
   - { name: Gemini,                 <<: *prefer_AI,         icon: https://raw.githubusercontent.com/Koolson/Qure/master/IconSet/Color/AI.png }
   - { name: ChatGPT,                <<: *prefer_AI,         icon: https://raw.githubusercontent.com/Koolson/Qure/master/IconSet/Color/ChatGPT.png }
 
-  # 国内
-  - { name: Apple,                  <<: *prefer_direct,    icon: https://raw.githubusercontent.com/Koolson/Qure/master/IconSet/Color/Apple.png }
-  - { name: Bilibili,               <<: *prefer_direct,    icon: https://raw.githubusercontent.com/Koolson/Qure/master/IconSet/Color/bilibili.png }
-  - { name: Microsoft,              <<: *prefer_direct,    icon: https://raw.githubusercontent.com/Koolson/Qure/master/IconSet/Color/Microsoft.png }
   # 国外
   - { name: GitHub,                 <<: *prefer_proxy,     icon: https://raw.githubusercontent.com/Koolson/Qure/master/IconSet/Color/GitHub.png }
   - { name: Cloudflare,             <<: *prefer_proxy,     icon: https://raw.githubusercontent.com/Koolson/Qure/master/IconSet/Color/Cloudflare.png }   
@@ -158,6 +154,11 @@ proxy-groups:
   - { name: HBO,                    <<: *prefer_proxy,     icon: https://raw.githubusercontent.com/Koolson/Qure/master/IconSet/Color/HBO_Max.png } 
   - { name: Emby,                   <<: *prefer_proxy,     icon: https://raw.githubusercontent.com/Koolson/Qure/master/IconSet/Color/Emby.png } 
   - { name: Disney,                 <<: *prefer_proxy,     icon: https://raw.githubusercontent.com/Koolson/Qure/master/IconSet/Color/Disney.png }    
+
+  # 国内
+  - { name: Apple,                  <<: *prefer_direct,    icon: https://raw.githubusercontent.com/Koolson/Qure/master/IconSet/Color/Apple.png }
+  - { name: Bilibili,               <<: *prefer_direct,    icon: https://raw.githubusercontent.com/Koolson/Qure/master/IconSet/Color/bilibili.png }
+  - { name: Microsoft,              <<: *prefer_direct,    icon: https://raw.githubusercontent.com/Koolson/Qure/master/IconSet/Color/Microsoft.png }
 
   # 游戏服务
   - { name: Xbox,                   <<: *prefer_proxy,     icon: https://raw.githubusercontent.com/Koolson/Qure/master/IconSet/Color/Xbox.png }
@@ -232,11 +233,7 @@ rule-providers:
   openai:                 { <<: *domain, interval: 86444, url: https://raw.githubusercontent.com/MetaCubeX/meta-rules-dat/meta/geo/geosite/openai.mrs }
   category-ai-!cn:        { <<: *domain, interval: 86187, url: https://raw.githubusercontent.com/MetaCubeX/meta-rules-dat/meta/geo/geosite/category-ai-!cn.mrs }
 
-  # 国内域名规则集
-  cn:                     { <<: *domain, interval: 86512, url: https://raw.githubusercontent.com/MetaCubeX/meta-rules-dat/meta/geo/geosite/cn.mrs }
-  bilibili:               { <<: *domain, interval: 86276, url: https://raw.githubusercontent.com/MetaCubeX/meta-rules-dat/meta/geo/geosite/bilibili.mrs }
-  apple@cn:               { <<: *domain, interval: 86214, url: https://raw.githubusercontent.com/MetaCubeX/meta-rules-dat/meta/geo/geosite/apple@cn.mrs }
-  microsoft@cn:           { <<: *domain, interval: 86555, url: https://raw.githubusercontent.com/MetaCubeX/meta-rules-dat/meta/geo/geosite/microsoft@cn.mrs }
+
 
   # 国外域名规则集
   google:                 { <<: *domain, interval: 86689, url: https://raw.githubusercontent.com/MetaCubeX/meta-rules-dat/meta/geo/geosite/google.mrs }
@@ -270,6 +267,12 @@ rule-providers:
   hbo:                    { <<: *domain, interval: 86444, url: https://raw.githubusercontent.com/MetaCubeX/meta-rules-dat/meta/geo/geosite/hbo.mrs }
   emby:                   { <<: *domain, interval: 86255, url: https://github.com/666OS/rules/raw/release/mihomo/domain/Emby.mrs }
   disney:                 { <<: *domain, interval: 86567, url: https://raw.githubusercontent.com/MetaCubeX/meta-rules-dat/meta/geo/geosite/disney.mrs }
+
+  # 国内域名规则集
+  cn:                     { <<: *domain, interval: 86512, url: https://raw.githubusercontent.com/MetaCubeX/meta-rules-dat/meta/geo/geosite/cn.mrs }
+  bilibili:               { <<: *domain, interval: 86276, url: https://raw.githubusercontent.com/MetaCubeX/meta-rules-dat/meta/geo/geosite/bilibili.mrs }
+  apple@cn:               { <<: *domain, interval: 86214, url: https://raw.githubusercontent.com/MetaCubeX/meta-rules-dat/meta/geo/geosite/apple@cn.mrs }
+  microsoft@cn:           { <<: *domain, interval: 86555, url: https://raw.githubusercontent.com/MetaCubeX/meta-rules-dat/meta/geo/geosite/microsoft@cn.mrs }
 
   # 测速服务
   speedtest:              { <<: *domain, interval: 86333, url: https://raw.githubusercontent.com/MetaCubeX/meta-rules-dat/meta/geo/geosite/speedtest.mrs }
