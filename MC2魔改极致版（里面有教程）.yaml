@@ -25,15 +25,11 @@ dns:
    - RULE-SET,cloudflare@cn,real-ip
    - RULE-SET,microsoft@cn,real-ip    
   default-nameserver:
-    - 119.29.29.29
-    - 223.5.5.5
-    - 180.76.76.76
-  direct-nameserver:
-    - https://doh.pub/dns-query#disable-qtype-65=true  
-    - https://dns.alidns.com/dns-query#disable-qtype-65=true
+   - 223.5.5.5
+   - 119.29.29.29
   nameserver:
-    - https://doh.pub/dns-query#disable-qtype-65=true  
-    - https://dns.alidns.com/dns-query#disable-qtype-65=true
+   - https://223.5.5.5/dns-query
+   - https://119.29.29.29/dns-query
        
 
 #==============================复制粘贴而已，也不能删除===================================
@@ -131,6 +127,10 @@ proxy-groups:
   - { name: Gemini,                 <<: *prefer_AI,         icon: https://raw.githubusercontent.com/Koolson/Qure/master/IconSet/Color/AI.png }
   - { name: ChatGPT,                <<: *prefer_AI,         icon: https://raw.githubusercontent.com/Koolson/Qure/master/IconSet/Color/ChatGPT.png }
 
+  # 国内
+  - { name: Apple,                  <<: *prefer_direct,    icon: https://raw.githubusercontent.com/Koolson/Qure/master/IconSet/Color/Apple.png }
+  - { name: Bilibili,               <<: *prefer_direct,    icon: https://raw.githubusercontent.com/Koolson/Qure/master/IconSet/Color/bilibili.png }
+  - { name: Microsoft,              <<: *prefer_direct,    icon: https://raw.githubusercontent.com/Koolson/Qure/master/IconSet/Color/Microsoft.png }
   # 国外
   - { name: GitHub,                 <<: *prefer_proxy,     icon: https://raw.githubusercontent.com/Koolson/Qure/master/IconSet/Color/GitHub.png }
   - { name: Cloudflare,             <<: *prefer_proxy,     icon: https://raw.githubusercontent.com/Koolson/Qure/master/IconSet/Color/Cloudflare.png }   
@@ -155,10 +155,8 @@ proxy-groups:
   - { name: Emby,                   <<: *prefer_proxy,     icon: https://raw.githubusercontent.com/Koolson/Qure/master/IconSet/Color/Emby.png } 
   - { name: Disney,                 <<: *prefer_proxy,     icon: https://raw.githubusercontent.com/Koolson/Qure/master/IconSet/Color/Disney.png }    
 
-  # 国内
-  - { name: Apple,                  <<: *prefer_direct,    icon: https://raw.githubusercontent.com/Koolson/Qure/master/IconSet/Color/Apple.png }
-  - { name: Bilibili,               <<: *prefer_direct,    icon: https://raw.githubusercontent.com/Koolson/Qure/master/IconSet/Color/bilibili.png }
-  - { name: Microsoft,              <<: *prefer_direct,    icon: https://raw.githubusercontent.com/Koolson/Qure/master/IconSet/Color/Microsoft.png }
+  # 港台媒体
+  - { name: 港台媒体,                <<: *prefer_proxy,     icon: https://raw.githubusercontent.com/Koolson/Qure/master/IconSet/Color/TVB.png, proxies: [ 香港, 香港均衡, 香港策略 ] } 
 
   # 游戏服务
   - { name: Xbox,                   <<: *prefer_proxy,     icon: https://raw.githubusercontent.com/Koolson/Qure/master/IconSet/Color/Xbox.png }
@@ -233,7 +231,11 @@ rule-providers:
   openai:                 { <<: *domain, interval: 86444, url: https://raw.githubusercontent.com/MetaCubeX/meta-rules-dat/meta/geo/geosite/openai.mrs }
   category-ai-!cn:        { <<: *domain, interval: 86187, url: https://raw.githubusercontent.com/MetaCubeX/meta-rules-dat/meta/geo/geosite/category-ai-!cn.mrs }
 
-
+  # 国内域名规则集
+  cn:                     { <<: *domain, interval: 86512, url: https://raw.githubusercontent.com/MetaCubeX/meta-rules-dat/meta/geo/geosite/cn.mrs }
+  bilibili:               { <<: *domain, interval: 86276, url: https://raw.githubusercontent.com/MetaCubeX/meta-rules-dat/meta/geo/geosite/bilibili.mrs }
+  apple@cn:               { <<: *domain, interval: 86214, url: https://raw.githubusercontent.com/MetaCubeX/meta-rules-dat/meta/geo/geosite/apple@cn.mrs }
+  microsoft@cn:           { <<: *domain, interval: 86555, url: https://raw.githubusercontent.com/MetaCubeX/meta-rules-dat/meta/geo/geosite/microsoft@cn.mrs }
 
   # 国外域名规则集
   google:                 { <<: *domain, interval: 86689, url: https://raw.githubusercontent.com/MetaCubeX/meta-rules-dat/meta/geo/geosite/google.mrs }
@@ -268,11 +270,13 @@ rule-providers:
   emby:                   { <<: *domain, interval: 86255, url: https://github.com/666OS/rules/raw/release/mihomo/domain/Emby.mrs }
   disney:                 { <<: *domain, interval: 86567, url: https://raw.githubusercontent.com/MetaCubeX/meta-rules-dat/meta/geo/geosite/disney.mrs }
 
-  # 国内域名规则集
-  cn:                     { <<: *domain, interval: 86512, url: https://raw.githubusercontent.com/MetaCubeX/meta-rules-dat/meta/geo/geosite/cn.mrs }
-  bilibili:               { <<: *domain, interval: 86276, url: https://raw.githubusercontent.com/MetaCubeX/meta-rules-dat/meta/geo/geosite/bilibili.mrs }
-  apple@cn:               { <<: *domain, interval: 86214, url: https://raw.githubusercontent.com/MetaCubeX/meta-rules-dat/meta/geo/geosite/apple@cn.mrs }
-  microsoft@cn:           { <<: *domain, interval: 86555, url: https://raw.githubusercontent.com/MetaCubeX/meta-rules-dat/meta/geo/geosite/microsoft@cn.mrs }
+  # 港媒体
+  viu:                    { <<: *domain, interval: 86415, url: https://raw.githubusercontent.com/MetaCubeX/meta-rules-dat/meta/geo/geosite/viu.mrs }
+  mytvsuper:              { <<: *domain, interval: 86415, url: https://raw.githubusercontent.com/MetaCubeX/meta-rules-dat/meta/geo/geosite/mytvsuper.mrs }
+  tvb:                    { <<: *domain, interval: 86415, url: https://raw.githubusercontent.com/MetaCubeX/meta-rules-dat/meta/geo/geosite/tvb.mrs }
+  kktv:                   { <<: *domain, interval: 86415, url: https://raw.githubusercontent.com/MetaCubeX/meta-rules-dat/meta/geo/geosite/kktv.mrs }
+  litv:                   { <<: *domain, interval: 86415, url: https://raw.githubusercontent.com/MetaCubeX/meta-rules-dat/meta/geo/geosite/litv.mrs }  
+
 
   # 测速服务
   speedtest:              { <<: *domain, interval: 86333, url: https://raw.githubusercontent.com/MetaCubeX/meta-rules-dat/meta/geo/geosite/speedtest.mrs }
@@ -328,9 +332,7 @@ rules:
   - RULE-SET,bilibili,Bilibili
   - RULE-SET,apple@cn,DIRECT
   - RULE-SET,apple,Apple
-  - RULE-SET,github,GitHub
-  - RULE-SET,microsoft@cn,DIRECT
-  - RULE-SET,microsoft,Microsoft  
+  
 
   # 6. AI 相关服务 (优先分流)
   - RULE-SET,gemini,Gemini
@@ -340,6 +342,17 @@ rules:
   # 7. Cloudflare 相关
   - RULE-SET,cloudflare@cn,DIRECT
   - RULE-SET,cloudflare,Cloudflare
+
+  # 港台媒体
+  - RULE-SET,viu,港台媒体
+  - RULE-SET,mytvsuper,港台媒体
+  - RULE-SET,tvb,港台媒体
+  - RULE-SET,kktv,港台媒体
+  - RULE-SET,litv,港台媒体    
+  # biliapi港B站
+  - DOMAIN-SUFFIX,biliapi.net,港台媒体
+  - DOMAIN-SUFFIX,biliapi.com,港台媒体
+  - DOMAIN-SUFFIX,bilivideo.com,港台媒体   
 
   # 8. 国外主流软件与媒体 (分流)
   - RULE-SET,tiktok,TikTok
@@ -353,7 +366,10 @@ rules:
   - RULE-SET,spotify,Spotify
   - RULE-SET,netflix,Netflix
   - RULE-SET,speedtest,Speedtest
-  - RULE-SET,category-media,Media国外媒体集合  
+  - RULE-SET,category-media,Media国外媒体集合
+  # 8.1 微软  
+  - RULE-SET,microsoft@cn,DIRECT
+  - RULE-SET,microsoft,Microsoft
 
   # 9. 社交平台
   - RULE-SET,telegram,Telegram
