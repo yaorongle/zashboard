@@ -68,7 +68,7 @@ proxy-providers:
 
 # 第一个机场
   vip1:
-    url: http://43.161.217.65:2096/sub/yao-clash?format=clash #修改你的机场1订阅地址（有些anytls节点的需要后面加：&flag=anytls）
+    url: http://############################################## #修改你的机场1订阅地址（有些anytls节点的需要后面加：&flag=anytls）
     <<: *provider_config
     user-agent: "clash.meta.mihomo" #默认或者修改这里为你机场的UA    
     override:
@@ -79,7 +79,7 @@ proxy-providers:
 
 # 第二个机场
   vip2:
-    url: https://43.161.248.77:2096/sub/clash #修改你的机场2订阅地址
+    url: https://############################################## #修改你的机场2订阅地址
     <<: *provider_config
     user-agent: "clash.meta.mihomo" #默认或者修改这里为你机场2的UA
     override:
@@ -90,7 +90,7 @@ proxy-providers:
 
 # 第三个机场
   vip3:
-    url: https://43.161.248.77:2096/sub/uk-node #修改你的机场3订阅地址
+    url: https://############################################## #修改你的机场3订阅地址
     <<: *provider_config
     user-agent: "clash.meta.mihomo" #默认或者修改这里为你机场3的UA
     override:
