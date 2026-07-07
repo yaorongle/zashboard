@@ -22,6 +22,7 @@ dns:
   fake-ip-filter:
   - RULE-SET,cn,real-ip
   - RULE-SET,private,real-ip
+  - RULE-SET,apple,real-ip
   - RULE-SET,geolocation-!cn,fake-ip
   - MATCH,fake-ip  # 改为 fake-ip：未匹配域名由远端代理解析，防止 DNS 泄露
   default-nameserver:
@@ -44,9 +45,16 @@ dns:
       - 240.0.0.0/4
   # ---- 新增：Claude/Anthropic 域名强制走海外 DNS ----
   nameserver-policy:
+    # 国内苹果域名强制使用国内DoH，不走海外（关键修复）
+    "+.apple.com": ["https://doh.pub/dns-query", "https://dns.alidns.com/dns-query"]
+    "+.apps.apple.com": ["https://doh.pub/dns-query", "https://dns.alidns.com/dns-query"]
+    "+.mzstatic.com": ["https://doh.pub/dns-query", "https://dns.alidns.com/dns-query"]
+    "+.cdn-apple.com": ["https://doh.pub/dns-query", "https://dns.alidns.com/dns-query"]
+    # AI海外域名保留海外DNS不变
     "+.anthropic.com": ["https://1.1.1.1/dns-query", "https://8.8.8.8/dns-query"]
     "+.claude.ai": ["https://1.1.1.1/dns-query", "https://8.8.8.8/dns-query"]
     "+.claudeusercontent.com": ["https://1.1.1.1/dns-query", "https://8.8.8.8/dns-query"]
+    "+.openai.com": ["https://1.1.1.1/dns-query", "https://8.8.8.8/dns-query"]
 
 #==============================复制粘贴而已，也不能删除===================================
 
