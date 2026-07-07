@@ -22,11 +22,11 @@ payload:
   - +.octopus.com.hk
   - +.octopuscards.com
   - +.price.com.hk
-  - +.tvb.com
-  - +.mytvsuper.com
-  - +.programme.mytvsuper.com
-  - +.user-api.mytvsuper.com
-  - +.content-api.mytvsuper.com
+  - +.tvb.com": ["203.80.96.9", "202.67.240.222", "https://1.1.1.1/dns-query"]
+  - +.mytvsuper.com": ["203.80.96.9", "202.67.240.222", "https://1.1.1.1/dns-query"]
+  - +.programme.mytvsuper.com": ["203.80.96.9", "202.67.240.222", "https://1.1.1.1/dns-query"]
+  - +.user-api.mytvsuper.com": ["203.80.96.9", "202.67.240.222", "https://1.1.1.1/dns-query"]
+  - +.content-api.mytvsuper.com": ["203.80.96.9", "202.67.240.222", "https://1.1.1.1/dns-query"]
   - +.gov.hk
 
   # ***** ————富途证劵———— *****
