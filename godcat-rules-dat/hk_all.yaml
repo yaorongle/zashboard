@@ -27,6 +27,8 @@ payload:
   - +.tvb.com
   - +.mytvsuper.com
   - +.programme.mytvsuper.com
+  - +.user-api.mytvsuper.com
+  - +.content-api.mytvsuper.com
   - +.gov.hk
 
   # ***** ————富途证劵———— *****
