@@ -5,7 +5,7 @@ payload:
   - +.sc.com
   - +.icbcasia.com": ["https://doh.pub/dns-query", "https://dns.alidns.com/dns-query"]
   - +.cncbinternational.com
-  - +.cmbwinglungbank.com": ["210.5.56.145", "210.5.56.146"]
+  - +.cmbwinglungbank.com
 
   # —— 数字/虚拟银行 ——
   - +.pingandb.com
