@@ -2,10 +2,10 @@ payload:
 # —— 传统商业银行 ——
   - +.hsbc.com.hk
   - +.hangseng.com
-  - +.icbcasia.com
   - +.sc.com
   - +.cncbinternational.com
   - +.cmbwinglungbank.com
+  - +.icbcasia.com
 
   # —— 数字/虚拟银行 ——
   - +.pingandb.com
