@@ -22,12 +22,17 @@ payload:
   - +.octopus.com.hk
   - +.octopuscards.com
   - +.price.com.hk
+  - +.gov.hk
+
+  # —— 香港TVB/myTVsuper ——
   - +.tvb.com
   - +.mytvsuper.com
   - +.programme.mytvsuper.com
+  - +.edgeware.tvb.com
+  - +.edgeware-live.edgeware.tvb.com
   - +.user-api.mytvsuper.com
+  - +.rapi.mytvsuper.com
   - +.content-api.mytvsuper.com
-  - +.gov.hk
 
   # ***** ————富途证劵———— *****
   - +.futuhk.com
