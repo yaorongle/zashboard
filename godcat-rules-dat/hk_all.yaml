@@ -4,7 +4,7 @@ payload:
   - +.hangseng.com
   - +.sc.com
   - +.icbcasia.com": ["https://doh.pub/dns-query", "https://dns.alidns.com/dns-query"]
-  - +.cncbinternational.com": ["210.5.56.145", "210.5.56.146", "202.153.97.2", "202.153.97.130", "203.80.96.10", "203.80.96.9", "202.45.84.58", "202.45.84.59","202.67.240.222", "202.67.240.221"]
+  - +.cncbinternational.com
   - +.cmbwinglungbank.com": ["210.5.56.145", "210.5.56.146"]
 
   # —— 数字/虚拟银行 ——
