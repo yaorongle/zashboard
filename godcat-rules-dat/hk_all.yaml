@@ -25,8 +25,8 @@ payload:
   - +.gov.hk
 
   # —— 香港TVB/myTVsuper ——
-  - +.tvb.com
-  - +.mytvsuper.com
+  - +.tvb.com": ["203.80.96.9", "202.67.240.222", "https://1.1.1.1/dns-query"]
+  - +.mytvsuper.com": ["203.80.96.9", "202.67.240.222", "https://1.1.1.1/dns-query"]
   - +.programme.mytvsuper.com
   - +.edgeware.tvb.com
   - +.edgeware-live.edgeware.tvb.com
