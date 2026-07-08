@@ -3,7 +3,7 @@ payload:
   - +.hsbc.com.hk
   - +.hangseng.com
   - +.sc.com
-  - +.icbcasia.com": ["https://doh.pub/dns-query", "https://dns.alidns.com/dns-query"]
+  - +.icbcasia.com
   - +.cncbinternational.com
   - +.cmbwinglungbank.com
 
