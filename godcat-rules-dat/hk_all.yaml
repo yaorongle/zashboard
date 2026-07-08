@@ -9,6 +9,7 @@ payload:
 
   # —— 数字/虚拟银行 ——
   - +.pingandb.com
+  - +.m.pingandb.com
   - +.elebank.com
   - +.za.group
   - +.welab.bank
