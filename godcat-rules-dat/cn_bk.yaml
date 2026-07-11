@@ -23,3 +23,7 @@ payload:
   - +.alipay.com
   - +.cn.unionpay.com
   
+  # —— 香港政府网 ——
+  - +.immd.gov.hk
+  - +.digitalpolicy.gov.hk
+  - +.ird.gov.hk
