@@ -1,6 +1,6 @@
 payload:
 # —— 传统商业银行 ——
-香港（HSBC）汇丰银行
+香港（HSBC）汇丰银行+（HangSeng）恒生银行
   - +.hsbc.com.hk
   - +.hsbcnet.com
   - +.hsbcinnovationbanking.com
@@ -9,8 +9,13 @@ payload:
   - +.cdntm.hsbc.com.hk
   - +.rbwm-api.hsbc.com.hk
   - +.hsbc.edge.sdk.awswaf.com
-香港（HSBC）恒生银行
+  - +.hsbc.md-apis.medallia.com
   - +.hangseng.com
+  - +.rdp.hangseng.com
+  - +.cdntm.hangseng.com
+  - +.mobile.eum-appdynamics.com
+  
+ 
   - +.sc.com
   - +.icbcasia.com
   - +.cncbinternational.com
