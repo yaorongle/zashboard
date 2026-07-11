@@ -30,6 +30,12 @@ payload:
   - +.mtr.com.hk
   - +.goofish.com
 
+    # —— 香港政府网 ——
+  - +.immd.gov.hk
+  - +.digitalpolicy.gov.hk
+  - +.ird.gov.hk
+  - +.gov.hk
+
   # —— 香港TVB/myTVsuper ——
   - +.tvb.com
   - +.mytvsuper.com
