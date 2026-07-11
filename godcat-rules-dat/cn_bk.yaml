@@ -27,3 +27,5 @@ payload:
   - +.immd.gov.hk
   - +.digitalpolicy.gov.hk
   - +.ird.gov.hk
+  # —— 香港本土 ——
+  - +.hk.chinamobile.com
