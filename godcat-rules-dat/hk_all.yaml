@@ -21,7 +21,8 @@ payload:
   - +.aa.online-metrix.net
   - +.h64.online-metrix.net
   - +.collect-ap-east-1.tealiumiq.com
-  
+  - +.cdn.optimizely.com
+  - +.tags.tiqcdn.com
  
   - +.sc.com
   - +.icbcasia.com
