@@ -23,6 +23,9 @@ payload:
   - +.collect-ap-east-1.tealiumiq.com
   - +.cdn.optimizely.com
   - +.tags.tiqcdn.com
+  - +.log-58144bf0.we-stats.com
+  - +.resources.digital-cloud.medallia.eu
+  - +.log-b8c1a2ee.we-stats.com
  
   - +.sc.com
   - +.icbcasia.com
