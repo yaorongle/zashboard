@@ -42,8 +42,12 @@ payload:
   # —— 数字/虚拟银行 ——
   - +.pingandb.com
   - +.m.pingandb.com
+  - +.paob.com.hk
+  - +.itigertech.com
+  
   - +.elebank.com
   - +.za.group
+  - +.secure.globalsign.com
   - +.welab.bank
   - +.antbank.hk
   - +.livibank.com
