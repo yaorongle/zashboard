@@ -56,9 +56,13 @@ payload:
   - +.branch.io
   - +.braze.com
   
-  - +.antbank.hk
-  - +.livibank.com
   - +.fusionbank.com
+  - +.antbank.hk
+  
+  - +.livibank.com
+  - +.guardsquare.com
+  - +.queue-it.net
+
   
   # —— 香港本土生活与电信 ——
   - +.hkjc.com
