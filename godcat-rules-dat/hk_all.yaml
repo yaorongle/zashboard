@@ -89,6 +89,9 @@ payload:
   - +.user-api.mytvsuper.com
   - +.rapi.mytvsuper.com
   - +.content-api.mytvsuper.com
+  - +.redsoapp.com
+  - +.adsrvr.org
+  - +.svr-algorix.com
 
   # ***** ————富途证劵———— *****
   - +.futuhk.com
