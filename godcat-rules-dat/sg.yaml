@@ -1,7 +1,11 @@
 payload:
-# —— 传统商业银行 ——
+# —— 新加坡传统商业银行 ——
   - +.ocbc.com
   - +.ocbc.com.sg
   - +.brilliantcollector.com
   - +.uniqgift.com
   - +.go-mpulse.net
+
+# —— 新加坡TV电视台 ——
+  - +.mewatch.sg
+  - +.8world.com
