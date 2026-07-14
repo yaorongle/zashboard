@@ -1,6 +1,6 @@
 ﻿﻿# =========================================================================
-#         Fairy Clash🧚精灵猫🧚AI_Clash 专用版🧚v1.0.3（内含教程）🧚      #
-#                                                 -- Mihomo v1.19.27+     #
+#         Fairy Clash🧚精灵猫🧚AI_Clashv专用版🧚v1.0.4（内含教程）🧚      #
+#                                                 -- Mihomo v1.19.28+     #
 #                看下面有教程的字，哪些复制哪些粘贴                          #
 #                                                                         #
 #         总就四步：复制DNS粘贴，填写订阅地址在下面，上传这份yaml，选择启动    #
@@ -340,6 +340,8 @@ rules:
   - RULE-SET,facebook_ip,Facebook,no-resolve
   - RULE-SET,netflix_ip,Netflix,no-resolve
   - RULE-SET,emby_ip,Emby,no-resolve
+  - RULE-SET,hk_ip,香港,no-resolve
+  - RULE-SET,us_ip,美国,no-resolve
 
   # 9. 国内直连兜底 (GeoIP & Geosite)
   - RULE-SET,cn,DIRECT
