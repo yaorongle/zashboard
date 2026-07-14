@@ -225,7 +225,7 @@ rule-providers:
   microsoft:              { <<: *domain, interval: 86539, url: "https://raw.githubusercontent.com/MetaCubeX/meta-rules-dat/meta/geo/geosite/microsoft.mrs" }
   threads:                { type: http, behavior: domain, format: text, interval: 86540, url: "https://raw.githubusercontent.com/MetaCubeX/meta-rules-dat/meta/geo/geosite/threads.list", path: ./rules/threads.list }
   hk_all:                 { type: http, behavior: domain, interval: 86400, url: "https://raw.githubusercontent.com/yaorongle/zashboard/refs/heads/main/godcat-rules-dat/hk_all.yaml", path: ./rules/hk_all.yaml }
-  
+  sg:                     { type: http, behavior: domain, interval: 86118, url: "https://raw.githubusercontent.com/yaorongle/zashboard/refs/heads/main/godcat-rules-dat/sg.yaml", path: ./rules/sg.yaml }
 
      
  
@@ -262,6 +262,8 @@ rule-providers:
   cloudflare_ip:          { <<: *ip,     interval: 86684, url: "https://raw.githubusercontent.com/MetaCubeX/meta-rules-dat/meta/geo-lite/geoip/cloudflare.mrs" }
   apple_ip:               { <<: *ip,     interval: 86129, url: "https://raw.githubusercontent.com/MetaCubeX/meta-rules-dat/meta/geo-lite/geoip/apple.mrs" }
   emby_ip:                { <<: *ip,     interval: 86461, url: "https://github.com/666OS/rules/raw/release/mihomo/ip/Emby.mrs" }
+  hk_ip:                  { <<: *ip,     interval: 86625, url: "https://raw.githubusercontent.com/MetaCubeX/meta-rules-dat/refs/heads/meta/geo/geoip/hk.mrs" }
+  us_ip:                  { <<: *ip,     interval: 86635, url: "https://raw.githubusercontent.com/MetaCubeX/meta-rules-dat/refs/heads/meta/geo/geoip/us.mrs" }
 
   # 广告规则集
   category-ads-all:       { <<: *domain, interval: 86277, url: "https://raw.githubusercontent.com/MetaCubeX/meta-rules-dat/meta/geo/geosite/category-ads-all.mrs" }
@@ -270,9 +272,8 @@ rule-providers:
   # =============================== -  匹配逻辑  - ================================
 rules:
   - RULE-SET,hk_all,香港
+  - RULE-SET,sg,新加坡
   - RULE-SET,cn_bk,国内网站
-  - DOMAIN-SUFFIX,ocbc.com.sg,新加坡
-  - DOMAIN-SUFFIX,ocbc.com,新加坡
   - DOMAIN-SUFFIX,ifastgb.com,美国
 
 
