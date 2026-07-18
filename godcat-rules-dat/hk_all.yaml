@@ -3,7 +3,10 @@ payload:
 香港（HSBC）汇丰银行+（HangSeng）恒生银行
   - +.hsbc.com.hk
   - +.hsbcnet.com
+  - +.c-hsbc.lytics.io
   - +.tiqcdn.com
+  - +.tealiumiq.com
+  - +.optimizely.com
   - +.col.eum-appdynamics.com
   - +.hsbcinnovationbanking.com
   - +.m.mobilex-static.hsbc.com.hk
