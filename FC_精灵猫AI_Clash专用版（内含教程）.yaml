@@ -1,6 +1,6 @@
-﻿﻿# =========================================================================
-#         Fairy Clash🧚精灵猫🧚AI_Clashv专用版🧚v1.0.4（内含教程）🧚      #
-#                                                 -- Mihomo v1.19.28+     #
+﻿# =========================================================================
+#             Fairy Clash🧚精灵猫🧚AI_Clashv专用版🧚v1.0.6（内含教程）🧚   #
+#                                                 -- Mihomo v1.19.29+     #
 #                看下面有教程的字，哪些复制哪些粘贴                          #
 #                                                                         #
 #         总就四步：复制DNS粘贴，填写订阅地址在下面，上传这份yaml，选择启动    #
@@ -107,7 +107,6 @@ proxy-providers:
 
 
 
-
 # ============================================= - ⚓️ 锚点区开始 - =============================================
 # 锚点 -  代理优先
 prefer_proxy: &prefer_proxy { "type": "select", "proxies": [ "默认代理", "节点选择", "自动选择", "手动选择", "香港", "美国", "日本", "台湾", "新加坡", "韩国", "其他地区", "DIRECT" ] }
@@ -122,11 +121,12 @@ url_test: &url_test { "type": "url-test", "interval": 120, "tolerance": 30, "laz
 # =============================================  -  域名策略组  - ===============================================
 proxy-groups:
   # 主要分组策略
+  - { name: 漏网之鱼,    type: select,          icon: https://raw.githubusercontent.com/Koolson/Qure/master/IconSet/Color/Final.png, proxies: [ 美国,香港,台湾,日本,新加坡,韩国,手动选择, 默认代理,节点选择, DIRECT ] }
   - { name: 默认代理,    type: select,          include-all: true, icon: https://raw.githubusercontent.com/Koolson/Qure/master/IconSet/Color/Proxy.png }
   - { name: 手动选择,    type: select,          include-all: true, icon: https://raw.githubusercontent.com/Koolson/Qure/master/IconSet/Color/Static.png }
   - { name: 节点选择,    type: select,          icon: https://raw.githubusercontent.com/Koolson/Qure/master/IconSet/Color/Airport.png, proxies: [ 自动选择, 手动选择, 香港, 美国, 日本, 台湾, 新加坡, 韩国, 其他地区, DIRECT ] }
   - { name: 自动选择,    <<: *url_test,         icon: https://raw.githubusercontent.com/Koolson/Qure/master/IconSet/Color/SSID_1.png }
-  - { name: 漏网之鱼,    type: select,          icon: https://raw.githubusercontent.com/Koolson/Qure/master/IconSet/Color/Final.png, proxies: [ 默认代理,节点选择, DIRECT ] }
+
 
   # AI 相关服务
   - { name: AI,                type: select,          icon: https://raw.githubusercontent.com/Koolson/Qure/master/IconSet/Color/Siri.png, proxies: [ 美国, 日本, 新加坡, 韩国, 香港, 台湾, 其他地区, 默认代理, 手动选择 ] }
@@ -225,7 +225,8 @@ rule-providers:
   microsoft:              { <<: *domain, interval: 86539, url: "https://raw.githubusercontent.com/MetaCubeX/meta-rules-dat/meta/geo/geosite/microsoft.mrs" }
   threads:                { type: http, behavior: domain, format: text, interval: 86540, url: "https://raw.githubusercontent.com/MetaCubeX/meta-rules-dat/meta/geo/geosite/threads.list", path: ./rules/threads.list }
   hk_all:                 { type: http, behavior: domain, interval: 86400, url: "https://raw.githubusercontent.com/yaorongle/zashboard/refs/heads/main/godcat-rules-dat/hk_all.yaml", path: ./rules/hk_all.yaml }
-  sg:                     { type: http, behavior: domain, interval: 86118, url: "https://raw.githubusercontent.com/yaorongle/zashboard/refs/heads/main/godcat-rules-dat/sg.yaml", path: ./rules/sg.yaml }
+  sg:                 { type: http, behavior: domain, interval: 86118, url: "https://raw.githubusercontent.com/yaorongle/zashboard/refs/heads/main/godcat-rules-dat/sg.yaml", path: ./rules/sg.yaml }
+  
 
      
  
@@ -264,6 +265,7 @@ rule-providers:
   emby_ip:                { <<: *ip,     interval: 86461, url: "https://github.com/666OS/rules/raw/release/mihomo/ip/Emby.mrs" }
   hk_ip:                  { <<: *ip,     interval: 86625, url: "https://raw.githubusercontent.com/MetaCubeX/meta-rules-dat/refs/heads/meta/geo/geoip/hk.mrs" }
   us_ip:                  { <<: *ip,     interval: 86635, url: "https://raw.githubusercontent.com/MetaCubeX/meta-rules-dat/refs/heads/meta/geo/geoip/us.mrs" }
+
 
   # 广告规则集
   category-ads-all:       { <<: *domain, interval: 86277, url: "https://raw.githubusercontent.com/MetaCubeX/meta-rules-dat/meta/geo/geosite/category-ads-all.mrs" }
@@ -362,3 +364,6 @@ rules:
   # 13. 最终兜底规则
   - MATCH,漏网之鱼
 # ===============================================  -  EOF - =======================================================
+
+
+
