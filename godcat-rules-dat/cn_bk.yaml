@@ -28,5 +28,7 @@ payload:
   - +.digitalpolicy.gov.hk
   - +.ird.gov.hk
   - +.gov.hk
+    # —— 中银香港 ——
+  - +.bochk.com
 
   - +.adobe.com
