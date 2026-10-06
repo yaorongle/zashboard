@@ -1,6 +1,5 @@
 payload:
 # —— 传统商业银行 ——
-  - +.ccb.com
   - +.icbc.com.cn
   - +.cmbchina.com
   - +.citicbank.com
